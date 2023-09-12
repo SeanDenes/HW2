@@ -17,6 +17,23 @@ class ViewController: UIViewController, UITableViewDataSource {
         tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the cell that triggered the segue
+        if let cell = sender as? UITableViewCell,
+           // Get the index path of the cell from the table view
+           let indexPath = tableView.indexPath(for: cell),
+           // Get the detail view controller
+           let detailViewController = segue.destination as? DetailViewController {
+
+            // Use the index path to get the associated track
+            let movie = movies[indexPath.row]
+
+            // Set the track on the detail view controller
+            detailViewController.movie = movie
+        }
+
+
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
@@ -28,6 +45,15 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.configure(with:movie)
         return cell
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let indexPath = tableView.indexPathForSelectedRow {
+            // Deselect the row at the corresponding index path
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+    
+
     
     @IBOutlet weak var tableView: UITableView!
     

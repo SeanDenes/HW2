@@ -16,6 +16,7 @@
 		5D0EA2102AAF87FD0069D4C9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EA20F2AAF87FD0069D4C9 /* Movie.swift */; };
 		5D0EA2122AAFDA340069D4C9 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EA2112AAFDA340069D4C9 /* MovieCell.swift */; };
 		5D6CD0ED2AAFE6E200EC3780 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 5D6CD0EC2AAFE6E200EC3780 /* Nuke */; };
+		5D6CD0F32AB0E69E00EC3780 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6CD0F22AB0E69E00EC3780 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		5D0EA2082AAF84390069D4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0EA20F2AAF87FD0069D4C9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		5D0EA2112AAFDA340069D4C9 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		5D6CD0F22AB0E69E00EC3780 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				5D0EA1FE2AAF84370069D4C9 /* ViewController.swift */,
 				5D0EA2112AAFDA340069D4C9 /* MovieCell.swift */,
 				5D0EA2002AAF84370069D4C9 /* Main.storyboard */,
+				5D6CD0F22AB0E69E00EC3780 /* DetailViewController.swift */,
 				5D0EA2032AAF84390069D4C9 /* Assets.xcassets */,
 				5D0EA2052AAF84390069D4C9 /* LaunchScreen.storyboard */,
 				5D0EA2082AAF84390069D4C9 /* Info.plist */,
@@ -163,6 +166,7 @@
 				5D0EA1FF2AAF84370069D4C9 /* ViewController.swift in Sources */,
 				5D0EA1FB2AAF84370069D4C9 /* AppDelegate.swift in Sources */,
 				5D0EA2102AAF87FD0069D4C9 /* Movie.swift in Sources */,
+				5D6CD0F32AB0E69E00EC3780 /* DetailViewController.swift in Sources */,
 				5D0EA2122AAFDA340069D4C9 /* MovieCell.swift in Sources */,
 				5D0EA1FD2AAF84370069D4C9 /* SceneDelegate.swift in Sources */,
 			);
