@@ -13,6 +13,9 @@
 		5D0EA2022AAF84370069D4C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EA2002AAF84370069D4C9 /* Main.storyboard */; };
 		5D0EA2042AAF84390069D4C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EA2032AAF84390069D4C9 /* Assets.xcassets */; };
 		5D0EA2072AAF84390069D4C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D0EA2052AAF84390069D4C9 /* LaunchScreen.storyboard */; };
+		5D0EA2102AAF87FD0069D4C9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EA20F2AAF87FD0069D4C9 /* Movie.swift */; };
+		5D0EA2122AAFDA340069D4C9 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0EA2112AAFDA340069D4C9 /* MovieCell.swift */; };
+		5D6CD0ED2AAFE6E200EC3780 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 5D6CD0EC2AAFE6E200EC3780 /* Nuke */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		5D0EA2032AAF84390069D4C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D0EA2062AAF84390069D4C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D0EA2082AAF84390069D4C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D0EA20F2AAF87FD0069D4C9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5D0EA2112AAFDA340069D4C9 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D6CD0ED2AAFE6E200EC3780 /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,25 @@
 		5D0EA1F92AAF84370069D4C9 /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
+				5D0EA20E2AAF875D0069D4C9 /* Models */,
 				5D0EA1FA2AAF84370069D4C9 /* AppDelegate.swift */,
 				5D0EA1FC2AAF84370069D4C9 /* SceneDelegate.swift */,
 				5D0EA1FE2AAF84370069D4C9 /* ViewController.swift */,
+				5D0EA2112AAFDA340069D4C9 /* MovieCell.swift */,
 				5D0EA2002AAF84370069D4C9 /* Main.storyboard */,
 				5D0EA2032AAF84390069D4C9 /* Assets.xcassets */,
 				5D0EA2052AAF84390069D4C9 /* LaunchScreen.storyboard */,
 				5D0EA2082AAF84390069D4C9 /* Info.plist */,
 			);
 			path = HW2;
+			sourceTree = "<group>";
+		};
+		5D0EA20E2AAF875D0069D4C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D0EA20F2AAF87FD0069D4C9 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = HW2;
+			packageProductDependencies = (
+				5D6CD0EC2AAFE6E200EC3780 /* Nuke */,
+			);
 			productName = HW2;
 			productReference = 5D0EA1F72AAF84370069D4C9 /* HW2.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 5D0EA1EE2AAF84370069D4C9;
+			packageReferences = (
+				5D6CD0EB2AAFE6E200EC3780 /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = 5D0EA1F82AAF84370069D4C9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +162,8 @@
 			files = (
 				5D0EA1FF2AAF84370069D4C9 /* ViewController.swift in Sources */,
 				5D0EA1FB2AAF84370069D4C9 /* AppDelegate.swift in Sources */,
+				5D0EA2102AAF87FD0069D4C9 /* Movie.swift in Sources */,
+				5D0EA2122AAFDA340069D4C9 /* MovieCell.swift in Sources */,
 				5D0EA1FD2AAF84370069D4C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +382,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D6CD0EB2AAFE6E200EC3780 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = exactVersion;
+				version = 9.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D6CD0EC2AAFE6E200EC3780 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D6CD0EB2AAFE6E200EC3780 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D0EA1EF2AAF84370069D4C9 /* Project object */;
 }
