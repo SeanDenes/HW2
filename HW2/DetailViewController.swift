@@ -12,7 +12,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var popLabel: UILabel!
     @IBOutlet weak var voteAverageLabel: UILabel!
     @IBOutlet weak var votesLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
+
+    @IBOutlet weak var textView: UITextView!
+    
+    @IBOutlet weak var titleLabel: UILabel!
     var movie: Movie!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +23,8 @@ class DetailViewController: UIViewController {
         popLabel.text = String(movie.popularity)
         voteAverageLabel.text=String(movie.voteAverage)
         votesLabel.text = String(movie.voteCount)
-        descriptionLabel.text=String(movie.description)
-        
+        textView.text=movie.description
+        titleLabel.text=movie.title
     }
     
 
